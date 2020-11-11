@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
   </head>
   <body>
     <div id="root">
-      <input type="text" id="new-item">
+    <!--  <input type="text" id= "new" v-model = "newTodo"> -->
+
+
       <ul>
-        <li v-for = "item in items" >{{ item }}</li>
+        <li v-for = "item in items" >
+          <i class="far fa-circle"> </i>{{ item }}</li>
       </ul>
+      <input  id="new"  type="text">
+      <button @click = "addItem">Aggiungi</button>
 
     </div>
     <script src="main.js" charset="utf-8"></script>
