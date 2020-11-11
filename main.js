@@ -6,8 +6,8 @@ var app = new Vue(
     },
     methods : {
       addItem () {
-        this.items.push(this.new);
-        this.new = "";
+        this.items.push(this.newItem);
+        this.newItem = "";
       }
     },
 
